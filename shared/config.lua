@@ -1,10 +1,10 @@
 Config = {}
 
 Config.QuoteChances = {
-    wholesome = 50,      -- 50% chance
-    balanced = 30,       -- 30% chance
-    chaos = 15,          -- 15% chance
-    ultraChaos = 4,      -- 4% chance
+    wholesome = 25,      -- 25% chance
+    balanced = 25,       -- 25% chance
+    chaos = 25,          -- 25% chance
+    ultraChaos = 24,     -- 24% chance
     legendary = 1        -- 1% chance
 }
 
