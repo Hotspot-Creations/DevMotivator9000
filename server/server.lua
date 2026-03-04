@@ -1,8 +1,3 @@
-local function pickRandom(t)
-    if #t == 0 then return nil end
-    return t[math.random(1, #t)]
-end
-
 --====================================================
 -- RESOURCE STATS
 --====================================================
@@ -300,14 +295,11 @@ CreateThread(function()
     end
 
     -- HEALTH
+    local healthBracket = math.floor(health / 10) * 10
+    local healthQuote = Config.HealthQuotes[healthBracket] or ""
     print("^5[DevMotivator9000]^7 Server Health Index: " .. health .. "%")
-
-    if health > 85 then
-        print("^2[DevMotivator9000]^7 Status: COOKING.")
-    elseif health > 65 then
-        print("^3[DevMotivator9000]^7 Status: It works, mostly.")
-    else
-        print("^1[DevMotivator9000]^7 Status: We Pray.")
+    if healthQuote ~= "" then
+        print("^5[DevMotivator9000]^7 " .. healthQuote)
     end
 
     print("^5[DevMotivator9000]^7 ------------------------------")
