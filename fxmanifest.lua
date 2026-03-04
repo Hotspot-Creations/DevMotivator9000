@@ -7,5 +7,6 @@ version '1.0.0'
 
 server_scripts {
     'shared/config.lua',
-    'server/server.lua'
+    'server/server.lua',
+    'server/personality.lua'
 }
