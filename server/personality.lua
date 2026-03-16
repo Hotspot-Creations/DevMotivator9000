@@ -37,6 +37,6 @@ CreateThread(function()
     local quote = getMotivationQuote()
 
     if quote then
-        print("^5[Motivation]^7 " .. quote)
+        print("^5[Motivation?]^7 " .. quote)
     end
 end)
